@@ -24,7 +24,6 @@ import yaml
 _config = yaml.safe_load(Path("config.yaml").read_text(encoding="utf-8"))
 TICKERS = _config["tickers"]
 LOOKBACK_DAYS = _config["fetch"]["lookback_days"]
-SOURCE = _config["fetch"]["source"]
 OUTPUT_FILE = Path("data/stock_data.csv")
 LOG_FILE = Path("logs/fetch.log")
 HEADER = ["Date", "Ticker", "Open", "High", "Low", "Close", "Volume"]
@@ -61,9 +60,9 @@ def get_latest_date_in_csv() -> str | None:
 
 def fetch_and_append():
     try:
-        from vnstock import Vnstock
+        import yfinance as yf
     except Exception as e:
-        log.error(f"Lỗi import vnstock: {type(e).__name__}: {e}")
+        log.error(f"Lỗi import yfinance: {type(e).__name__}: {e}")
         sys.exit(1)
 
     today = date.today()
@@ -101,8 +100,16 @@ def fetch_and_append():
 
         for ticker in TICKERS:
             try:
-                stock = Vnstock().stock(symbol=ticker, source=SOURCE)
-                df = stock.quote.history(start=start_str, end=end_str, interval="1D")
+                # yfinance: end là exclusive → +1 ngày để lấy cả end_str
+                end_excl = (yesterday + timedelta(days=1)).strftime("%Y-%m-%d")
+                df = yf.Ticker(f"{ticker}.VN").history(
+                    start=start_str, end=end_excl, interval="1d", auto_adjust=False
+                )
+                if df is not None and not df.empty:
+                    df = df.reset_index().rename(columns={
+                        "Date": "time", "Open": "open", "High": "high",
+                        "Low": "low", "Close": "close", "Volume": "volume",
+                    })
 
                 if df is None or df.empty:
                     log.warning(f"{ticker}: Không có data ({start_str} → {end_str})")
