@@ -10,3 +10,35 @@
 2026-11-02 21:31:55,041 [INFO] MSN: ✓ 64 dòng
 2026-11-02 21:31:55,289 [INFO] BID: ✓ 64 dòng
 2026-11-02 21:31:55,289 [INFO] === Xong: 10/10 tickers | 640 dòng mới ===
+2026-11-02 23:15:46,720 [INFO] Mã mới (backfill 90 ngày): ACB, AFX, ANT, DAG, FUEFCV50, FUESSV30, FUESSV50, FUEVFVND, FUEVN100, GAS, ITC, MFS, OIL, POW, SHB, TVD, VGI, VPB
+2026-11-02 23:15:46,720 [INFO] Fetch từ 2026-10-31 → 2026-11-01
+2026-11-02 23:15:47,354 [INFO] ACB: ✓ 64 dòng
+2026-11-02 23:15:47,527 [INFO] AFX: ✓ 61 dòng
+2026-11-02 23:15:47,700 [INFO] ANT: ✓ 61 dòng
+2026-11-02 23:15:48,152 [ERROR] $DAG.VN: possibly delisted; no timezone found
+2026-11-02 23:15:48,153 [WARNING] DAG: Không có data (2026-10-31 → 2026-11-01)
+2026-11-02 23:15:48,322 [INFO] FUEFCV50: ✓ 60 dòng
+2026-11-02 23:15:48,492 [INFO] FUESSV30: ✓ 61 dòng
+2026-11-02 23:15:48,660 [INFO] FUESSV50: ✓ 64 dòng
+2026-11-02 23:15:48,828 [INFO] FUEVFVND: ✓ 61 dòng
+2026-11-02 23:15:49,002 [INFO] FUEVN100: ✓ 61 dòng
+2026-11-02 23:15:49,230 [INFO] GAS: ✓ 64 dòng
+2026-11-02 23:15:49,404 [ERROR] $HPG.VN: possibly delisted; no price data found  (1d 2026-10-31 -> 2026-11-02)
+2026-11-02 23:15:49,405 [WARNING] HPG: Không có data (2026-10-31 → 2026-11-01)
+2026-11-02 23:15:49,597 [INFO] ITC: ✓ 64 dòng
+2026-11-02 23:15:49,778 [ERROR] $MBB.VN: possibly delisted; no price data found  (1d 2026-10-31 -> 2026-11-02)
+2026-11-02 23:15:49,778 [WARNING] MBB: Không có data (2026-10-31 → 2026-11-01)
+2026-11-02 23:15:50,222 [ERROR] $MFS.VN: possibly delisted; no timezone found
+2026-11-02 23:15:50,223 [WARNING] MFS: Không có data (2026-10-31 → 2026-11-01)
+2026-11-02 23:15:50,455 [ERROR] $OIL.VN: possibly delisted; no timezone found
+2026-11-02 23:15:50,455 [WARNING] OIL: Không có data (2026-10-31 → 2026-11-01)
+2026-11-02 23:15:50,628 [INFO] POW: ✓ 64 dòng
+2026-11-02 23:15:50,900 [INFO] SHB: ✓ 64 dòng
+2026-11-02 23:15:51,061 [ERROR] $TCB.VN: possibly delisted; no price data found  (1d 2026-10-31 -> 2026-11-02)
+2026-11-02 23:15:51,061 [WARNING] TCB: Không có data (2026-10-31 → 2026-11-01)
+2026-11-02 23:15:51,435 [ERROR] $TVD.VN: possibly delisted; no timezone found
+2026-11-02 23:15:51,436 [WARNING] TVD: Không có data (2026-10-31 → 2026-11-01)
+2026-11-02 23:15:51,682 [ERROR] $VGI.VN: possibly delisted; no timezone found
+2026-11-02 23:15:51,683 [WARNING] VGI: Không có data (2026-10-31 → 2026-11-01)
+2026-11-02 23:15:51,923 [INFO] VPB: ✓ 64 dòng
+2026-11-02 23:15:51,924 [INFO] === Xong: 13/21 tickers | 813 dòng mới ===
