@@ -56,6 +56,13 @@ def get_latest_date_in_csv() -> str | None:
     return latest
 
 
+def get_tickers_in_csv() -> set:
+    if not OUTPUT_FILE.exists():
+        return set()
+    with open(OUTPUT_FILE, newline="", encoding="utf-8") as f:
+        return {row.get("Ticker", "") for row in csv.DictReader(f)}
+
+
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
 
 def fetch_and_append():
@@ -70,18 +77,23 @@ def fetch_and_append():
 
     # ── Xác định khoảng ngày cần fetch ───────────────────────────────────────
     latest_str = get_latest_date_in_csv()
+    new_tickers = []
 
     if latest_str is None:
         fetch_start = today - timedelta(days=LOOKBACK_DAYS)
         log.info(f"Chưa có data → fetch {LOOKBACK_DAYS} ngày: {fetch_start} → {yesterday}")
     else:
         fetch_start = date.fromisoformat(latest_str) + timedelta(days=1)
-        if fetch_start > yesterday:
+        new_tickers = [t for t in TICKERS if t not in get_tickers_in_csv()]
+        if new_tickers:
+            log.info(f"Mã mới (backfill {LOOKBACK_DAYS} ngày): {', '.join(new_tickers)}")
+        if fetch_start > yesterday and not new_tickers:
             log.info(f"Data đã up-to-date (latest: {latest_str}). Không có gì để fetch.")
             sys.exit(0)
         log.info(f"Fetch từ {fetch_start} → {yesterday}")
 
     start_str = fetch_start.strftime("%Y-%m-%d")
+    backfill_str = (today - timedelta(days=LOOKBACK_DAYS)).strftime("%Y-%m-%d")
     end_str = yesterday.strftime("%Y-%m-%d")
 
     # ── Tạo thư mục data nếu chưa có ─────────────────────────────────────────
@@ -102,8 +114,11 @@ def fetch_and_append():
             try:
                 # yfinance: end là exclusive → +1 ngày để lấy cả end_str
                 end_excl = (yesterday + timedelta(days=1)).strftime("%Y-%m-%d")
+                t_start = backfill_str if ticker in new_tickers else start_str
+                if t_start > end_str:
+                    continue  # mã cũ đã up-to-date
                 df = yf.Ticker(f"{ticker}.VN").history(
-                    start=start_str, end=end_excl, interval="1d", auto_adjust=False
+                    start=t_start, end=end_excl, interval="1d", auto_adjust=False
                 )
                 if df is not None and not df.empty:
                     df = df.reset_index().rename(columns={
@@ -117,7 +132,7 @@ def fetch_and_append():
 
                 df["time"] = df["time"].astype(str).str[:10]
                 df_filtered = df[
-                    (df["time"] >= start_str) & (df["time"] <= end_str)
+                    (df["time"] >= t_start) & (df["time"] <= end_str)
                 ]
 
                 if df_filtered.empty:
