@@ -15,7 +15,7 @@ tickers:
 
 fetch:
   lookback_days: 90        # Số ngày fetch lần đầu
-  source: VCI              # Nguồn data: VCI, KBS, MSN, FMP
+  source: yfinance         # Nguồn data: Yahoo Finance (mã dạng <TICKER>.VN)
 
 report:
   top_picks: 3             # Số mã hiển thị trong "Top picks"
