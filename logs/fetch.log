@@ -188,3 +188,32 @@
 2026-11-09 21:15:04,268 [WARNING] VGI: Không có data (2026-11-06 → 2026-11-08)
 2026-11-09 21:15:04,502 [INFO] VPB: ✓ 1 dòng
 2026-11-09 21:15:04,502 [INFO] === Xong: 15/21 tickers | 15 dòng mới ===
+2026-11-10 18:24:42,937 [INFO] Mã mới (backfill 90 ngày): DAG, MFS, OIL, TVD, VGI
+2026-11-10 18:24:42,937 [INFO] Fetch từ 2026-11-07 → 2026-11-09
+2026-11-10 18:24:43,282 [INFO] ACB: ✓ 1 dòng
+2026-11-10 18:24:43,373 [INFO] AFX: ✓ 1 dòng
+2026-11-10 18:24:43,462 [INFO] ANT: ✓ 1 dòng
+2026-11-10 18:24:43,701 [ERROR] $DAG.VN: possibly delisted; no timezone found
+2026-11-10 18:24:43,701 [WARNING] DAG: Không có data (2026-11-07 → 2026-11-09)
+2026-11-10 18:24:43,794 [INFO] FUEFCV50: ✓ 1 dòng
+2026-11-10 18:24:43,878 [INFO] FUESSV30: ✓ 1 dòng
+2026-11-10 18:24:43,965 [INFO] FUESSV50: ✓ 1 dòng
+2026-11-10 18:24:44,052 [INFO] FUEVFVND: ✓ 1 dòng
+2026-11-10 18:24:44,136 [INFO] FUEVN100: ✓ 1 dòng
+2026-11-10 18:24:44,247 [INFO] GAS: ✓ 1 dòng
+2026-11-10 18:24:44,368 [INFO] HPG: ✓ 1 dòng
+2026-11-10 18:24:44,513 [INFO] ITC: ✓ 1 dòng
+2026-11-10 18:24:44,637 [INFO] MBB: ✓ 1 dòng
+2026-11-10 18:24:44,927 [ERROR] $MFS.VN: possibly delisted; no timezone found
+2026-11-10 18:24:44,927 [WARNING] MFS: Không có data (2026-11-07 → 2026-11-09)
+2026-11-10 18:24:45,035 [ERROR] $OIL.VN: possibly delisted; no timezone found
+2026-11-10 18:24:45,036 [WARNING] OIL: Không có data (2026-11-07 → 2026-11-09)
+2026-11-10 18:24:45,117 [INFO] POW: ✓ 1 dòng
+2026-11-10 18:24:45,208 [INFO] SHB: ✓ 1 dòng
+2026-11-10 18:24:45,297 [INFO] TCB: ✓ 1 dòng
+2026-11-10 18:24:45,399 [ERROR] $TVD.VN: possibly delisted; no timezone found
+2026-11-10 18:24:45,400 [WARNING] TVD: Không có data (2026-11-07 → 2026-11-09)
+2026-11-10 18:24:45,511 [ERROR] $VGI.VN: possibly delisted; no timezone found
+2026-11-10 18:24:45,511 [WARNING] VGI: Không có data (2026-11-07 → 2026-11-09)
+2026-11-10 18:24:45,614 [INFO] VPB: ✓ 1 dòng
+2026-11-10 18:24:45,614 [INFO] === Xong: 16/21 tickers | 16 dòng mới ===
