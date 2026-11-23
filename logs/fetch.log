@@ -450,3 +450,33 @@
 2026-11-20 18:56:12,753 [WARNING] VGI: Không có data (2026-11-19 → 2026-11-19)
 2026-11-20 18:56:12,880 [INFO] VPB: ✓ 1 dòng
 2026-11-20 18:56:12,880 [INFO] === Xong: 15/21 tickers | 15 dòng mới ===
+2026-11-23 22:23:08,025 [INFO] Mã mới (backfill 90 ngày): DAG, MFS, OIL, TVD, VGI
+2026-11-23 22:23:08,025 [INFO] Fetch từ 2026-11-20 → 2026-11-22
+2026-11-23 22:23:08,320 [INFO] ACB: ✓ 1 dòng
+2026-11-23 22:23:08,406 [INFO] AFX: ✓ 1 dòng
+2026-11-23 22:23:08,494 [INFO] ANT: ✓ 1 dòng
+2026-11-23 22:23:08,688 [ERROR] $DAG.VN: possibly delisted; no timezone found
+2026-11-23 22:23:08,689 [WARNING] DAG: Không có data (2026-11-20 → 2026-11-22)
+2026-11-23 22:23:08,757 [ERROR] $FUEFCV50.VN: possibly delisted; no price data found  (1d 2026-11-20 -> 2026-11-23)
+2026-11-23 22:23:08,757 [WARNING] FUEFCV50: Không có data (2026-11-20 → 2026-11-22)
+2026-11-23 22:23:08,839 [INFO] FUESSV30: ✓ 1 dòng
+2026-11-23 22:23:08,928 [INFO] FUESSV50: ✓ 1 dòng
+2026-11-23 22:23:09,008 [INFO] FUEVFVND: ✓ 1 dòng
+2026-11-23 22:23:09,089 [INFO] FUEVN100: ✓ 1 dòng
+2026-11-23 22:23:09,197 [INFO] GAS: ✓ 1 dòng
+2026-11-23 22:23:09,313 [INFO] HPG: ✓ 1 dòng
+2026-11-23 22:23:09,415 [INFO] ITC: ✓ 1 dòng
+2026-11-23 22:23:09,528 [INFO] MBB: ✓ 1 dòng
+2026-11-23 22:23:09,729 [ERROR] $MFS.VN: possibly delisted; no timezone found
+2026-11-23 22:23:09,729 [WARNING] MFS: Không có data (2026-11-20 → 2026-11-22)
+2026-11-23 22:23:09,854 [ERROR] $OIL.VN: possibly delisted; no timezone found
+2026-11-23 22:23:09,854 [WARNING] OIL: Không có data (2026-11-20 → 2026-11-22)
+2026-11-23 22:23:09,956 [INFO] POW: ✓ 1 dòng
+2026-11-23 22:23:10,045 [INFO] SHB: ✓ 1 dòng
+2026-11-23 22:23:10,130 [INFO] TCB: ✓ 1 dòng
+2026-11-23 22:23:10,235 [ERROR] $TVD.VN: possibly delisted; no timezone found
+2026-11-23 22:23:10,235 [WARNING] TVD: Không có data (2026-11-20 → 2026-11-22)
+2026-11-23 22:23:10,339 [ERROR] $VGI.VN: possibly delisted; no timezone found
+2026-11-23 22:23:10,340 [WARNING] VGI: Không có data (2026-11-20 → 2026-11-22)
+2026-11-23 22:23:10,428 [INFO] VPB: ✓ 1 dòng
+2026-11-23 22:23:10,428 [INFO] === Xong: 15/21 tickers | 15 dòng mới ===
