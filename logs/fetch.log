@@ -509,3 +509,47 @@
 2026-11-24 20:57:47,486 [WARNING] VGI: Không có data (2026-11-21 → 2026-11-23)
 2026-11-24 20:57:47,611 [INFO] VPB: ✓ 1 dòng
 2026-11-24 20:57:47,611 [INFO] === Xong: 16/21 tickers | 16 dòng mới ===
+2026-11-25 20:20:13,461 [INFO] Mã mới (backfill 90 ngày): DAG, MFS, OIL, TVD, VGI
+2026-11-25 20:20:13,461 [INFO] Fetch từ 2026-11-24 → 2026-11-24
+2026-11-25 20:20:14,040 [ERROR] $ACB.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:14,041 [WARNING] ACB: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:14,192 [ERROR] $AFX.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:14,193 [WARNING] AFX: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:14,355 [ERROR] $ANT.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:14,355 [WARNING] ANT: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:14,804 [ERROR] $DAG.VN: possibly delisted; no timezone found
+2026-11-25 20:20:14,805 [WARNING] DAG: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:14,975 [ERROR] $FUEFCV50.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:14,976 [WARNING] FUEFCV50: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:15,143 [ERROR] $FUESSV30.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:15,144 [WARNING] FUESSV30: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:15,307 [INFO] FUESSV50: ✓ 1 dòng
+2026-11-25 20:20:15,474 [ERROR] $FUEVFVND.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:15,474 [WARNING] FUEVFVND: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:15,636 [ERROR] $FUEVN100.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:15,637 [WARNING] FUEVN100: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:15,812 [ERROR] $GAS.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:15,813 [WARNING] GAS: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:15,995 [ERROR] $HPG.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:15,995 [WARNING] HPG: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:16,177 [ERROR] $ITC.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:16,178 [WARNING] ITC: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:16,354 [ERROR] $MBB.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:16,355 [WARNING] MBB: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:16,884 [ERROR] $MFS.VN: possibly delisted; no timezone found
+2026-11-25 20:20:16,884 [WARNING] MFS: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:17,116 [ERROR] $OIL.VN: possibly delisted; no timezone found
+2026-11-25 20:20:17,116 [WARNING] OIL: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:17,275 [ERROR] $POW.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:17,276 [WARNING] POW: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:17,426 [ERROR] $SHB.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:17,426 [WARNING] SHB: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:17,596 [ERROR] $TCB.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:17,597 [WARNING] TCB: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:17,851 [ERROR] $TVD.VN: possibly delisted; no timezone found
+2026-11-25 20:20:17,851 [WARNING] TVD: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:18,072 [ERROR] $VGI.VN: possibly delisted; no timezone found
+2026-11-25 20:20:18,073 [WARNING] VGI: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:18,234 [ERROR] $VPB.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
+2026-11-25 20:20:18,235 [WARNING] VPB: Không có data (2026-11-24 → 2026-11-24)
+2026-11-25 20:20:18,235 [INFO] === Xong: 1/21 tickers | 1 dòng mới ===
