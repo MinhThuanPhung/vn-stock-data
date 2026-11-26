@@ -553,3 +553,32 @@
 2026-11-25 20:20:18,234 [ERROR] $VPB.VN: possibly delisted; no price data found  (1d 2026-11-24 -> 2026-11-25)
 2026-11-25 20:20:18,235 [WARNING] VPB: Không có data (2026-11-24 → 2026-11-24)
 2026-11-25 20:20:18,235 [INFO] === Xong: 1/21 tickers | 1 dòng mới ===
+2026-11-26 19:56:42,395 [INFO] Mã mới (backfill 90 ngày): DAG, MFS, OIL, TVD, VGI
+2026-11-26 19:56:42,395 [INFO] Fetch từ 2026-11-25 → 2026-11-25
+2026-11-26 19:56:42,777 [INFO] ACB: ✓ 1 dòng
+2026-11-26 19:56:42,951 [INFO] AFX: ✓ 1 dòng
+2026-11-26 19:56:43,075 [INFO] ANT: ✓ 1 dòng
+2026-11-26 19:56:43,387 [ERROR] $DAG.VN: possibly delisted; no timezone found
+2026-11-26 19:56:43,388 [WARNING] DAG: Không có data (2026-11-25 → 2026-11-25)
+2026-11-26 19:56:43,503 [INFO] FUEFCV50: ✓ 1 dòng
+2026-11-26 19:56:43,627 [INFO] FUESSV30: ✓ 1 dòng
+2026-11-26 19:56:43,748 [INFO] FUESSV50: ✓ 1 dòng
+2026-11-26 19:56:43,891 [INFO] FUEVFVND: ✓ 1 dòng
+2026-11-26 19:56:44,017 [INFO] FUEVN100: ✓ 1 dòng
+2026-11-26 19:56:44,160 [INFO] GAS: ✓ 1 dòng
+2026-11-26 19:56:44,321 [INFO] HPG: ✓ 1 dòng
+2026-11-26 19:56:44,456 [INFO] ITC: ✓ 1 dòng
+2026-11-26 19:56:44,595 [INFO] MBB: ✓ 1 dòng
+2026-11-26 19:56:44,944 [ERROR] $MFS.VN: possibly delisted; no timezone found
+2026-11-26 19:56:44,945 [WARNING] MFS: Không có data (2026-11-25 → 2026-11-25)
+2026-11-26 19:56:45,102 [ERROR] $OIL.VN: possibly delisted; no timezone found
+2026-11-26 19:56:45,102 [WARNING] OIL: Không có data (2026-11-25 → 2026-11-25)
+2026-11-26 19:56:45,227 [INFO] POW: ✓ 1 dòng
+2026-11-26 19:56:45,348 [INFO] SHB: ✓ 1 dòng
+2026-11-26 19:56:45,473 [INFO] TCB: ✓ 1 dòng
+2026-11-26 19:56:45,628 [ERROR] $TVD.VN: possibly delisted; no timezone found
+2026-11-26 19:56:45,629 [WARNING] TVD: Không có data (2026-11-25 → 2026-11-25)
+2026-11-26 19:56:45,784 [ERROR] $VGI.VN: possibly delisted; no timezone found
+2026-11-26 19:56:45,784 [WARNING] VGI: Không có data (2026-11-25 → 2026-11-25)
+2026-11-26 19:56:45,914 [INFO] VPB: ✓ 1 dòng
+2026-11-26 19:56:45,915 [INFO] === Xong: 16/21 tickers | 16 dòng mới ===
